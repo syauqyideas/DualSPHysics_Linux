@@ -1,6 +1,6 @@
 <!-- Case name: SquareNormalRE5000Fixed -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 01:44:40">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 01:55:29">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -68,7 +68,7 @@
             <parameter key="#DtIni" value="0.0001" comment="Initial time step (default=h/speedsound)" units_comment="seconds" />
             <parameter key="#DtMin" value="1e-05" comment="Minimum time step (default=coefdtmin*h/speedsound)" units_comment="seconds" />
             <parameter key="DtAllParticles" value="0" comment="Velocity of particles used to calculate DT. 1:All, 0:Only fluid/floating (default=0)" />
-            <parameter key="TimeMax" value="0.75" comment="Time of simulation" units_comment="seconds" />
+            <parameter key="TimeMax" value="10.0" comment="Time of simulation" units_comment="seconds" />
             <parameter key="TimeOut" value="0.025" comment="Time out data" units_comment="seconds" />
             <parameter key="PartsOutMax" value="1.0" comment="%/100 of fluid particles allowed to be excluded from domain (default=1)" units_comment="decimal" />
             <parameter key="RhopOutMin" value="700" comment="Minimum rhop valid (default=700)" units_comment="kg/m^3" />

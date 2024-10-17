@@ -1,6 +1,6 @@
 <!-- Case name: SquareNormalRE5000Fixed -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 02:31:29">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 02:36:58">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -34,7 +34,7 @@
                 <drawfilestl file="external_GEO_fd0d074d_e175_4a8a_8bbd_4a718e2e431a.stl" objname="GEO_fd0d074d_e175_4a8a_8bbd_4a718e2e431a" autofill="false">
                     <drawscale x="0.001" y="0.001" z="0.001" />
                 </drawfilestl>
-                <setmkbound mk="1"/>
+                <setmkfluid mk="0"/>
                 <setdrawmode mode="full"/>
                 <drawcylinder radius="0.1" objname="Cylinder">
                     <point x="0.0" y="2.639" z="-0.34" />
@@ -42,14 +42,14 @@
                 </drawcylinder>
                 <move x="0.0" y="-0.12" z="0.0" />
                 <rotate ang="90.0" x="1.0" y="-0.0" z="-0.0" />
-                <setmkbound mk="2"/>
+                <setmkfluid mk="1"/>
                 <setdrawmode mode="full"/>
                 <drawcylinder radius="0.1" objname="Cylinder001">
                     <point x="0" y="0" z="0" />
                     <point x="0" y="0" z="2.64" />
                 </drawcylinder>
                 <matrixreset />
-                <setmkbound mk="3"/>
+                <setmkfluid mk="2"/>
                 <setdrawmode mode="full"/>
                 <drawcylinder radius="0.33" objname="Cylinder002">
                     <point x="0.0" y="-0.455" z="-0.78" />

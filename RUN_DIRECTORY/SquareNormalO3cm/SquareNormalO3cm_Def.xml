@@ -1,6 +1,6 @@
 <!-- Case name: SquareNormalO3cm -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 07:34:14">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 07:38:21">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -46,11 +46,11 @@
                     <point x="0.0" y="-0.45" z="0.6199999999999999" />
                 </drawcylinder>
                 <setmkbound mk="0"/>
-                <drawfilestl file="external_GEO_a48685ff_de22_4162_b7bb_4596fd675925.stl" objname="GEO_a48685ff_de22_4162_b7bb_4596fd675925" autofill="false">
+                <drawfilestl file="external_GEO_71bc73b6_6cea_4ba8_8f57_e58f39983e1f.stl" objname="GEO_71bc73b6_6cea_4ba8_8f57_e58f39983e1f" autofill="false">
                     <drawscale x="0.001" y="0.001" z="0.001" />
                 </drawfilestl>
                 <setmkfluid mk="2"/>
-                <drawfilestl file="external_GEO_740e31ec_e884_42d6_8713_360675d1744c.stl" objname="GEO_740e31ec_e884_42d6_8713_360675d1744c" autofill="false">
+                <drawfilestl file="external_GEO_7dc2eefc_a32d_486c_b641_e6a6dcc5f1b0.stl" objname="GEO_7dc2eefc_a32d_486c_b641_e6a6dcc5f1b0" autofill="false">
                     <drawscale x="0.001" y="0.001" z="0.001" />
                 </drawfilestl>
                 <shapeout file="" />

@@ -1,6 +1,6 @@
 <!-- Case name: SquareNormalO3cm -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 07:12:53">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 07:32:47">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -49,6 +49,10 @@
                 <drawfilestl file="external_GEO_a48685ff_de22_4162_b7bb_4596fd675925.stl" objname="GEO_a48685ff_de22_4162_b7bb_4596fd675925" autofill="false">
                     <drawscale x="0.001" y="0.001" z="0.001" />
                 </drawfilestl>
+                <setmkfluid mk="2"/>
+                <drawfilestl file="external_GEO_740e31ec_e884_42d6_8713_360675d1744c.stl" objname="GEO_740e31ec_e884_42d6_8713_360675d1744c" autofill="false">
+                    <drawscale x="0.001" y="0.001" z="0.001" />
+                </drawfilestl>
                 <shapeout file="" />
                 </mainlist>
             </commands>
@@ -58,6 +62,27 @@
         <special>
         <initialize>
         </initialize>
+            <inout>
+                <memoryresize size0="2.0" size="4.0" comment="Initial memory resize (size0) and the following memory resizes according to initial inlet/outlet particles (default=2 and 4)"/>
+                <determlimit value="1e+3" comment="Use 1e-3 for first_order or 1e+3 for zeroth_order (default=1e+3)" />
+                <extrapolatemode value="1" comment="Calculation mode for rhop and velocity extrapolation from ghost nodes 1:fast-single, 2:single, 3:double (default=1)" />
+                <inoutzone>
+                    <refilling value="0" comment="Refilling mode. 0:Simple full, 1:Simple below zsurf, 2:Advanced for reverse flows (very slow) (default=1)" />
+                    <inputtreatment value="0" comment="Treatment of fluid entering the zone. 0:No changes, 1:Convert fluid (necessary for outlet), 2:Remove fluid (recommended for inlet)" />
+                    <layers value="0" comment="Number of inlet/outlet particle layers" />
+                    <zone2d comment="Input zone for 2D simulations">
+                        <particles mkfluid="2" direction="top" />
+                    </zone2d>
+                    <imposevelocity mode="0" comment="Imposed velocity 0:fixed value, 1:variable value, 2:Extrapolated value (default=0)">
+                        <velocity v="0.0" comment="Uniform velocity" units_comment="m/s" />
+                    </imposevelocity>
+                    <imposerhop mode="0" comment="Outlet rhop 0:Imposed fixed value, 1:Hydrostatic, 2:Extrapolated from ghost nodes (default=0)" />
+                    <imposezsurf mode="0" comment="Inlet Z-surface 0:Imposed fixed value, 1:Imposed variable value, 2:Calculated from fluid domain (default=0)">
+                        <zbottom value="0.0" comment="Bottom level of water (used for Hydrostatic option)" units_comment="m" />
+                        <zsurf value="0.0" comment="Characteristic inlet Z-surface (used for Hydrostatic option)" units_comment="m" />
+                    </imposezsurf>
+                </inoutzone>
+            </inout>
         </special>
         <parameters>
             <parameter key="SavePosDouble" value="0" comment="Saves particle position using double precision (default=0)" />

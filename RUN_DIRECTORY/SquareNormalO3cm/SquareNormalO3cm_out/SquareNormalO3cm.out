@@ -39,7 +39,7 @@ OmpThreads: 4
 List: MAIN
 
 Total operations: 13
-[LoadXMLInit-End  time:0.108s]
+[LoadXMLInit-End  time:0.002s]
 
 [Draw]
 List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[995]  MResId=[0]  Dp=[0.001]  PosMin_x=[-0.5]  PosMin_y=[-1]  PosMin_z=[-0.85]  PosMax_x=[0.5]  PosMax_y=[3]  PosMax_z=[1.05]  CaseName=["SquareNormalO3cm"]  Data2D=[0]  Data2DPosy=[0]  H=[0.00207846]  MassBound=[9.95e-07]  MassFluid=[9.95e-07]
@@ -54,12 +54,12 @@ Case parts: 3 x 536z + 291z
 Memory: 7.07Gb 7244.11Mb (7596000000)
 
 > MAIN
-FileShapes> _Dp.vtk  shapes:34695  points:18711   (time:0.107s)
-FileShapes> _Actual.vtk  shapes:34695  points:19265   (time:0.004s)
+FileShapes> _Dp.vtk  shapes:34695  points:18711   (time:0.130s)
+FileShapes> _Actual.vtk  shapes:34695  points:19265   (time:0.016s)
 <MAIN (Operations= 10+3+1 = 14)
 
 Triangles: 34695 (0 ignored)
-[Draw-End  time:26.198s]
+[Draw-End  time:31.688s]
 
 [LoadsXMLConfig]
 Execution parameters.
@@ -67,6 +67,46 @@ Initials configuration.
 Floating bodies configuration.
 Properties configuration.
 Predefined motion configuration.
-[LoadsXMLConfig-End  time:0.000s]
+[LoadsXMLConfig-End  time:0.001s]
 
 [PreparePoints]
+Computing Vtk-Cells data...  (time:196.692s)
+BitSizeTot: 34 (1 + 10+12+11)
+Points loaded: 527605780
+Sorting points by Z...
+Sorting points by Mk...
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10): 6927088  -->  6927088
+Points -> Fluid particles:
+  block[  1] (mk:  1): 520678692  -->  520678692
+
+Particle summary:
+  Fixed....: 6927088  id:(0-6927087)   MKs:1 (10)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 520678692  id:(6927088-527605779)   MKs:1 (1)
+
+Total particles: 527605780 (bound=6927088 (fx=6927088 mv=0 ft=0) fluid=520678692)
+Total MK blocks: 2 (bound=1 (fx=1 mv=0 ft=0) fluid=1)
+
+Maximum depth: 1.4 (automatic)
+Speed of system: 3.70594 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 74.1188 max(74.1188,37.0594)
+Speed of sound: 74.1188 (automatic)
+
+Coefh:1.200000 (hdp:2.078461)
+
+[PreparePoints-End  time:769.355s]
+
+[SaveCase3D]
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/SquareNormalO3cm/SquareNormalO3cm_out/SquareNormalO3cm_MkCells.vtk  (time:0.380s, shapes:521965, points:2087860)
+
+*** Exception (JSpace::SaveCase) at JMDominguez/codes/GenCase/source/JSpace.cpp:758
+Text: Could not allocate the requested memory.
+
+
+Finished execution (code=1).
+

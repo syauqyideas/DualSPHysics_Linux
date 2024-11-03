@@ -39,7 +39,7 @@ OmpThreads: 4
 List: MAIN
 
 Total operations: 10
-[LoadXMLInit-End  time:0.001s]
+[LoadXMLInit-End  time:0.065s]
 
 [Draw]
 List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  MResId=[0]  Dp=[0.01]  PosMin_x=[0]  PosMin_y=[0]  PosMin_z=[0]  PosMax_x=[1]  PosMax_y=[1]  PosMax_z=[7]  CaseName=["Case"]  Data2D=[0]  Data2DPosy=[0]  H=[0.0207846]  MassBound=[0.001]  MassFluid=[0.001]
@@ -55,11 +55,11 @@ Memory: 0.01Gb 6.68Mb (7000000)
 
 > MAIN
 FileShapes> _Dp.vtk  shapes:1202  points:564   (time:0.003s)
-FileShapes> _Actual.vtk  shapes:1202  points:606   (time:0.001s)
+FileShapes> _Actual.vtk  shapes:1202  points:606   (time:0.101s)
 <MAIN (Operations= 7+3+1 = 11)
 
 Triangles: 1212 (0 ignored)
-[Draw-End  time:0.023s]
+[Draw-End  time:9.534s]
 
 [LoadsXMLConfig]
 Execution parameters.
@@ -70,7 +70,7 @@ Predefined motion configuration.
 [LoadsXMLConfig-End  time:0.000s]
 
 [PreparePoints]
-Computing Vtk-Cells data...  (time:0.156s)
+Computing Vtk-Cells data...  (time:0.182s)
 BitSizeTot: 26 (2 + 7+7+10)
 Points loaded: 568125
 Sorting points by Z...
@@ -100,29 +100,29 @@ Speed of sound: 62.6418 (automatic)
 
 Coefh:1.200000 (hdp:2.078461)
 
-[PreparePoints-End  time:0.224s]
+[PreparePoints-End  time:0.396s]
 
 [SaveCase3D]
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case_MkCells.vtk  (time:0.004s, shapes:21938, points:87752)
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case.bi4<double>  (time:0.010s)
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case_All.vtk  (time: 0.026s)
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case_Bound.vtk  (time: 0.003s)
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case_Fluid.vtk  (time: 0.025s)
-C:/Users/Syauqy/Downloads/FirstCase/Case/Case_out/Case.xml  (time:0.016s)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case_MkCells.vtk  (time:0.003s, shapes:21938, points:87752)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case.bi4<double>  (time:0.207s)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case_All.vtk  (time: 0.050s)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case_Bound.vtk  (time: 0.012s)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case_Fluid.vtk  (time: 0.425s)
+G:/GithubSkripsi/DualSPHysics/DualSPHysics_Linux_Compiled/RUN_DIRECTORY/Case/Case_out/Case.xml  (time:0.235s)
  
 Geometry file copied: Tube.stl (xml row:40)
 
-Save files time: 0.085s
+Save files time: 0.933s
 
 Particle limits:
   X range: 0 to 0.99 [m]
   Y range: 0 to 0.99 [m]
   Z range: 0 to 5.5 [m]
 
-[SaveCase3D-End  time:0.142s]
+[SaveCase3D-End  time:1.294s]
 
 
-Time of execution: 0.391 sec. (4 threads)
+Time of execution: 11.292 sec. (4 threads)
 
 Finished execution (code=0).
 

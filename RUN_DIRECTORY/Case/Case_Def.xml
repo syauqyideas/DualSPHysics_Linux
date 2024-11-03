@@ -1,6 +1,6 @@
 <!-- Case name: Case -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="21-08-2024 16:48:45">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="03-11-2024 15:04:17">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />

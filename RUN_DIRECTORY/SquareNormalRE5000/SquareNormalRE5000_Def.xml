@@ -1,6 +1,6 @@
 <!-- Case name: SquareNormalRE5000 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="18-10-2024 02:59:23">
+<case app="DesignSPHysics v0.7.0 (15-09-2023)" date="03-11-2024 15:22:44">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />

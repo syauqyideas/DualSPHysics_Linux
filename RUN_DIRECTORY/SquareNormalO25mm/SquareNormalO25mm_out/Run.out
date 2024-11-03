@@ -1,0 +1,329 @@
+
+
+ <DUALSPHYSICS5> Copyright (c) 2023 by
+ Dr Jose M. Dominguez Alonso, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira, Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Dr Orlando Garcia Feal, Ivan Martinez Estevez,
+ Dr Joseph O'Connor, Dr Aaron English
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+ Free download source files and documentation from DualSPHysics website (http://dual.sphysics.org).
+ Full list of developers and contributors is available at https://dual.sphysics.org/developers
+ Properly cite the use of DualSPHysics (Dominguez et al., 2022) (https://dual.sphysics.org/references).
+
+
+DualSPHysics5 v5.2.272 (12-06-2023)
+====================================
+[CUDA Capable device(s)]
+  Detected 1 CUDA Capable device(s)
+  CUDA Driver Version / Runtime Version: 12.7 / 11.7
+ 
+Device 0: "NVIDIA GeForce RTX 2060 SUPER"
+  CUDA Capability Major....: 7.5
+  Global memory............: 8192 MBytes
+  CUDA Cores...............: 2176 (34 Multiprocessors,  64 CUDA Cores/MP)
+  GPU Max Clock rate.......: 1650 MHz (1.65 GHz)
+  Memory Clock rate........: 7001 Mhz
+  Memory Bus Width.........: 256-bit
+  L2 Cache Size............: 4096 KBytes
+  Constant memory..........: 64 KBytes
+  Shared memory per block..: 48 KBytes
+  Registers per block......: 65536
+  Maximum threads per MP...: 1024
+  Maximum threads per block: 1024
+  Concurrent copy and kernel execution....: Yes with 6 copy engine(s)
+  Run time limit on kernels...............: No
+  Integrated GPU sharing Host Memory......: No
+  Support host page-locked memory mapping.: Yes
+  Device has ECC support..................: Disabled
+  CUDA Device Driver Mode (TCC or WDDM)...: WDDM (Windows Display Driver Model)
+  Device supports Unified Addressing (UVA): Yes
+  Device PCI (Domain / Bus / location)....: 0 / 1 / 0
+  Device supports P2P and RDMA............: No
+ 
+[GPU Hardware]
+Device default: 0 "NVIDIA GeForce RTX 2060 SUPER"
+Compute capability: 7.5
+Memory global: 8191 MB
+Memory shared: 49152 Bytes
+ 
+[Initialising JSphGpuSingle  03-11-2024 10:34:41]
+ProgramFile=".../dualsphysics/bin/DualSPHysics5.2_win64.exe"
+ExecutionDir=".../FreeCAD/Macro/DesignSPHysics-master"
+XmlFile=".../SquareNormalO25mm/SquareNormalO25mm_out/SquareNormalO25mm.xml"
+OutputDir=".../RUN_DIRECTORY/SquareNormalO25mm/SquareNormalO25mm_out"
+OutputDataDir=".../RUN_DIRECTORY/SquareNormalO25mm/SquareNormalO25mm_out"
+XML-App: GenCase v5.0.278c (30-10-2023)
+XML-Vars (uservars + ctes): MResId=[0]  CaseName=["SquareNormalO25mm"]  Data2D=[0]  Data2DPosy=[0]  H=[0.0166277]  KernelSize=[0.0332554]  B=[672686]  Gamma=[7]  Rhop0=[1000]  Dp=[0.008]  Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  MassFluid=[0.000512]  MassBound=[0.000512]
+XML-Vars (parameters): TimeMax=[0.5]  TimeOut=[0.01]
+**Basic case configuration is loaded
+**Special case configuration is loaded
+Loading initial state of particles...
+Loaded particles: 1060453
+MapRealPos(border)=(-0.328831,-0.784831,-0.792831)-(0.328831,2.74483,0.888831)
+MapRealPos(final)=(-0.328831,-0.784831,-0.792831)-(0.328831,2.74483,0.888831)
+**Initial state of particles is loaded
+PosCellCode="13_10_9 (8192,1024,512)"
+PosCellSize=0.033255  (1 x KernelSize)
+**3D-Simulation parameters:
+CaseName="SquareNormalO25mm"
+RunName="SquareNormalO25mm"
+Symmetry=False
+SavePosDouble=False
+SvExtraParts=""
+SaveFtAce=False
+SvTimers=True
+Boundary="DBC"
+StepAlgorithm="Symplectic"
+Kernel="Wendland"
+  Wendland.awen=90876.59
+  Wendland.bwen=-2.732702e+07
+Viscosity="Artificial"
+  Visco=0.01
+  ViscoBoundFactor=1
+DensityDiffusion="None"
+Shifting="None"
+RigidAlgorithm="None"
+FloatingCount=0
+CaseNp=1060453
+CaseNbound=94051
+CaseNfixed=94051
+CaseNmoving=0
+CaseNfloat=0
+CaseNfluid=966402
+PeriodicActive="None"
+Dp=0.008
+KernelH=0.016628  (CoefficientH=1.2; H/Dp=2.07846)
+KernelSize=0.03325538
+CteB=672685.7
+Gamma=7
+RhopZero=1000
+Cs0=68.62069522017393
+CFLnumber=0.2
+DtIni=0.0002423130209845893
+DtMin=1.211565122976674e-05
+DtAllParticles=False
+MassFluid=0.000512
+MassBound=0.000512
+TimeMax=0.5
+TimePart=0.01
+Gravity=(0,0,-9.81)
+NpMinimum=94051
+RhopOut=True
+RhopOutMin=700
+RhopOutMax=1300
+WrnPartsOut=True
+CellMode="Full"
+ScellDiv=1
+MapCells=(20,107,51)
+CellDomFixed=False
+**Requested GPU memory for 1060581 particles: 169.9 MB (0 times).
+DomCells=(20,107,51)
+DomCellCode="1+10_11_10"
+ 
+BlockSize calculation mode: Fixed.
+  BsForcesBound=128 (48 regs)
+  BsForcesFluid=128 (48 regs)
+ 
+**CellDiv: Requested gpu memory for 1113603 particles: 8.6 MB.
+**CellDiv: Requested gpu memory for 83538 cells (CellMode=Full): 1.3 MB.
+ 
+RunMode="Pos-Cell - Single-GPU"
+ 
+Particle summary:
+  Fixed....: 94051  id:(0-94050)   MKs:1 (10)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 966402  id:(94051-1060452)   MKs:1 (1)
+
+Total particles: 1060453 (bound=94051 (fx=94051 mv=0 ft=0) fluid=966402)
+Total MK blocks: 2 (bound=1 (fx=1 mv=0 ft=0) fluid=1)
+ 
+Allocated memory in CPU: 95498370 (91.07 MB)
+Allocated memory in GPU: 188528936 (179.80 MB)
+Part_0000        1060453 particles successfully stored
+
+[Initialising simulation (v8va43wn)  03-11-2024 10:34:42]
+PART       PartTime      TotalSteps    Steps    Time/Sec   Finish time        
+=========  ============  ============  =======  =========  ===================
+Part_0001      0.010007           205      205     955.73  03-11-2024 10:42:39
+  Particles out: 1  (total out: 1)  -  Current np: 1060452
+Part_0002      0.020016           433      228    1069.64  03-11-2024 10:43:08
+  Particles out: 1  (total out: 2)  -  Current np: 1060451
+Part_0003      0.030039           682      249    1204.57  03-11-2024 10:43:40
+  Particles out: 2  (total out: 4)  -  Current np: 1060449
+Part_0004      0.040006           945      263    1266.79  03-11-2024 10:44:04
+  Particles out: 4  (total out: 8)  -  Current np: 1060445
+Part_0005      0.050021          1234      289    1389.83  03-11-2024 10:44:30
+  Particles out: 9  (total out: 17)  -  Current np: 1060436
+Part_0006      0.060002          1528      294    1438.57  03-11-2024 10:44:52
+  Particles out: 3  (total out: 20)  -  Current np: 1060433
+Part_0007      0.070026          1842      314    1528.31  03-11-2024 10:45:13
+  Particles out: 10  (total out: 30)  -  Current np: 1060423
+Part_0008      0.080026          2149      307    1514.23  03-11-2024 10:45:29
+  Particles out: 49  (total out: 79)  -  Current np: 1060374
+Part_0009      0.090018          2436      287    1424.19  03-11-2024 10:45:37
+  Particles out: 45  (total out: 124)  -  Current np: 1060329
+Part_0010      0.100014          2714      278    1375.11  03-11-2024 10:45:39
+  Particles out: 81  (total out: 205)  -  Current np: 1060248
+Part_0011      0.110017          2991      277    1464.27  03-11-2024 10:45:46
+  Particles out: 109  (total out: 314)  -  Current np: 1060139
+Part_0012      0.120030          3264      273    1354.40  03-11-2024 10:45:48
+  Particles out: 63  (total out: 377)  -  Current np: 1060076
+Part_0013      0.130005          3534      270    1363.86  03-11-2024 10:45:48
+  Particles out: 77  (total out: 454)  -  Current np: 1059999
+Part_0014      0.140035          3811      277    1416.87  03-11-2024 10:45:51
+  Particles out: 126  (total out: 580)  -  Current np: 1059873
+Part_0015      0.150012          4087      276    1439.92  03-11-2024 10:45:55
+  Particles out: 119  (total out: 699)  -  Current np: 1059754
+Part_0016      0.160001          4373      286    1468.14  03-11-2024 10:45:59
+  Particles out: 76  (total out: 775)  -  Current np: 1059678
+Part_0017      0.170014          4656      283    1456.45  03-11-2024 10:46:01
+  Particles out: 49  (total out: 824)  -  Current np: 1059629
+Part_0018      0.180006          4944      288    1466.94  03-11-2024 10:46:05
+  Particles out: 38  (total out: 862)  -  Current np: 1059591
+Part_0019      0.190023          5228      284    1449.47  03-11-2024 10:46:06
+  Particles out: 110  (total out: 972)  -  Current np: 1059481
+Part_0020      0.200011          5507      279    1479.46  03-11-2024 10:46:09
+  Particles out: 104  (total out: 1076)  -  Current np: 1059377
+Part_0021      0.210023          5778      271    1597.95  03-11-2024 10:46:15
+  Particles out: 247  (total out: 1323)  -  Current np: 1059130
+Part_0022      0.220033          6048      270    1420.20  03-11-2024 10:46:15
+  Particles out: 232  (total out: 1555)  -  Current np: 1058898
+Part_0023      0.230013          6318      270    1426.16  03-11-2024 10:46:16
+  Particles out: 233  (total out: 1788)  -  Current np: 1058665
+Part_0024      0.240024          6593      275    1451.90  03-11-2024 10:46:18
+  Particles out: 250  (total out: 2038)  -  Current np: 1058415
+Part_0025      0.250026          6870      277    1403.93  03-11-2024 10:46:18
+  Particles out: 206  (total out: 2244)  -  Current np: 1058209
+Part_0026      0.260024          7150      280    1462.70  03-11-2024 10:46:19
+  Particles out: 209  (total out: 2453)  -  Current np: 1058000
+Part_0027      0.270030          7423      273    1382.60  03-11-2024 10:46:19
+  Particles out: 171  (total out: 2624)  -  Current np: 1057829
+Part_0028      0.280011          7685      262    1336.66  03-11-2024 10:46:18
+  Particles out: 184  (total out: 2808)  -  Current np: 1057645
+Part_0029      0.290008          7956      271    1376.36  03-11-2024 10:46:18
+  Particles out: 271  (total out: 3079)  -  Current np: 1057374
+Part_0030      0.300037          8221      265    1375.22  03-11-2024 10:46:17
+  Particles out: 402  (total out: 3481)  -  Current np: 1056972
+Part_0031      0.310035          8480      259    1344.49  03-11-2024 10:46:17
+  Particles out: 974  (total out: 4455)  -  Current np: 1055998
+Part_0032      0.320025          8744      264    1364.26  03-11-2024 10:46:16
+  Particles out: 202  (total out: 4657)  -  Current np: 1055796
+Part_0033      0.330000          9001      257    1321.75  03-11-2024 10:46:15
+  Particles out: 384  (total out: 5041)  -  Current np: 1055412
+Part_0034      0.340026          9259      258    1316.59  03-11-2024 10:46:14
+  Particles out: 256  (total out: 5297)  -  Current np: 1055156
+Part_0035      0.350008          9517      258    1319.69  03-11-2024 10:46:13
+  Particles out: 50  (total out: 5347)  -  Current np: 1055106
+Part_0036      0.360032          9773      256    1300.84  03-11-2024 10:46:12
+  Particles out: 44  (total out: 5391)  -  Current np: 1055062
+Part_0037      0.370009         10027      254    1311.75  03-11-2024 10:46:11
+  Particles out: 95  (total out: 5486)  -  Current np: 1054967
+Part_0038      0.380039         10281      254    1290.83  03-11-2024 10:46:10
+  Particles out: 114  (total out: 5600)  -  Current np: 1054853
+Part_0039      0.390024         10531      250    1278.82  03-11-2024 10:46:09
+  Particles out: 67  (total out: 5667)  -  Current np: 1054786
+Part_0040      0.400028         10782      251    1282.89  03-11-2024 10:46:08
+  Particles out: 82  (total out: 5749)  -  Current np: 1054704
+Part_0041      0.410011         11026      244    1256.15  03-11-2024 10:46:06
+  Particles out: 82  (total out: 5831)  -  Current np: 1054622
+Part_0042      0.420038         11271      245    1270.90  03-11-2024 10:46:05
+  Particles out: 99  (total out: 5930)  -  Current np: 1054523
+Part_0043      0.430010         11518      247    1276.28  03-11-2024 10:46:04
+  Particles out: 355  (total out: 6285)  -  Current np: 1054168
+Part_0044      0.440002         11766      248    1291.49  03-11-2024 10:46:03
+  Particles out: 785  (total out: 7070)  -  Current np: 1053383
+Part_0045      0.450012         12013      247    1296.40  03-11-2024 10:46:03
+  Particles out: 139  (total out: 7209)  -  Current np: 1053244
+Part_0046      0.460000         12261      248    1294.59  03-11-2024 10:46:02
+  Particles out: 132  (total out: 7341)  -  Current np: 1053112
+Part_0047      0.470011         12504      243    1322.18  03-11-2024 10:46:01
+  Particles out: 23  (total out: 7364)  -  Current np: 1053089
+Part_0048      0.480030         12744      240    1237.12  03-11-2024 10:46:00
+  Particles out: 47  (total out: 7411)  -  Current np: 1053042
+Part_0049      0.490002         12982      238    1242.77  03-11-2024 10:45:59
+  Particles out: 70  (total out: 7481)  -  Current np: 1052972
+Part_0050      0.500037         13227      245    1269.76  03-11-2024 10:45:58
+  Particles out: 113  (total out: 7594)  -  Current np: 1052859
+
+[Simulation finished  03-11-2024 10:45:58]
+Particles of simulation (initial): 1060453
+DTs adjusted to DtMin............: 0
+Excluded particles...............: 7594
+Total Runtime....................: 676.846924 sec.
+Simulation Runtime...............: 676.555298 sec.
+Runtime per physical second......: 1353.011597 sec.
+Steps per second.................: 19.550508
+Steps of simulation..............: 13227
+PART files.......................: 51
+Maximum number of particles......: 1060453
+Maximum number of cells..........: 81320
+CPU Memory.......................: 95498370 (91.07 MB)
+GPU Memory.......................: 188528936 (179.80 MB)
+ 
+[GPU Timers]
+VA-Init..........................: 0.291683 sec.
+NL-Limits........................: 25.198117 sec.
+NL-PreSort.......................: 0.255494 sec.
+NL-RadixSort.....................: 35.764173 sec.
+NL-CellBegin.....................: 4.190401 sec.
+NL-SortData......................: 0.328189 sec.
+NL-OutCheck......................: 23.418900 sec.
+CF-PreForces.....................: 7.239270 sec.
+CF-Forces........................: 574.752890 sec.
+SU-Shifting......................: 0 sec.
+SU-ComputeStep...................: 0.425414 sec.
+SU-Floating......................: 0 sec.
+SU-Motion........................: 0 sec.
+SU-Periodic......................: 0 sec.
+SU-ResizeNp......................: 0 sec.
+SU-DownData......................: 0.904078 sec.
+SU-SavePart......................: 3.771390 sec.
+SU-Chrono........................: 0 sec.
+SU-Moorings......................: 0 sec.
+SU-InOut.........................: 0 sec.
+SU-Gauges........................: 0.000000 sec.
+ 
+[Output files]
+- /Run.out............: Log file of the simulation.
+- CfgInit_Domain.vtk..: Saves the limits of the case and the simulation domain limits.
+- CfgInit_MapCells.vtk: Saves the cell division of the simulation domain.
+- PartInfo.ibi4.......: Binary file with execution information for each instant (input for PartInfo program).
+- PartOut_???.obi4....: Binary file with particles excluded during simulation (input for PartVtkOut program).
+- Part_????.bi4.......: Binary file with particle data in different instants.
+- Part_Head.ibi4......: Binary file with basic information of simulation data.
+- Run.csv.............: One line CSV file with execution parameters and other simulation data.
+ 
+[References]
+- Official solver reference DualSPHysics v5.0: J.M. Dominguez, G. Fourtakas,
+    C. Altomare, R.B. Canelas, A. Tafuni, O. Garcia-Feal, I. Martinez-Estevez,
+    A. Mokos, R. Vacondio, A.J.C. Crespo, B.D. Rogers, P.K. Stansby, M. Gomez-Gesteira.
+    2022. DualSPHysics: from fluid dynamics to multiphysics problems.
+    Computational Particle Mechanics, 9:867-895. doi: https://doi.org/10.1007/s40571-021-00404-2
+
+- Optimised CPU multi-core and GPU implementation (Dominguez et al., 2013  https://doi.org/10.1016/j.cpc.2012.10.015)
+- Dynamic boundary conditions (Crespo et al., 2007  https://doi.org/10.3970/cmc.2007.005.173)
+- Viscosity: Artificial (Monaghan, 1992  https://doi.org/10.1146/annurev.aa.30.090192.002551)
+- Kernel: Quintic Wendland (Wendland, 1995  https://doi.org/10.1007/BF02123482)
+- Time integration scheme: Symplectic (Leimkhuler, 1996  https://doi.org/10.1007/978-3-319-16375-8_1)
+
+Finished execution (code=0).
+

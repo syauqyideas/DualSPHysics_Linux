@@ -10,7 +10,7 @@ dirout=${name}_out
 # "executables" are renamed and called from their directory
 
 gencase="../../EXECS/GenCase4_linux64"
-dualsphysics="../../EXECS/DualSPHysics4_linux64"
+dualsphysics="../../EXECS/DualSPHysics5.0_linux64"
 boundaryvtk="../../EXECS/BoundaryVTK4_linux64"
 partvtk="../../EXECS/PartVTK4_linux64"
 partvtkout="../../EXECS/PartVTKOut4_linux64"

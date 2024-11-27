@@ -3,7 +3,7 @@
 
 # "name" and "dirout" are named according to the testcase
 
-name=SquareNormalO3cm
+name=FinalNormal4cm
 dirout=${name}_out
 
 

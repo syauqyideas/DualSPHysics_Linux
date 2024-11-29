@@ -1,6 +1,6 @@
 <!-- Case name: FinalNormal4cm -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="29-11-2024 08:02:17">
+<case app="GenCase v5.0.278c (30-10-2023)" date="29-11-2024 08:02:17">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -19,8 +19,7 @@
             <massbound value="0" auto="true" units_comment="kg" />
             <massfluid value="0" auto="true" units_comment="kg" />
         </constantsdef>
-        <mkconfig boundcount="241" fluidcount="9">
-        </mkconfig>
+        <mkconfig boundcount="241" fluidcount="9" />
         <geometry>
             <definition dp="0.005" comment="Initial inter-particle distance" units_comment="metres (m)">
                 <pointref x="0" y="0" z="0" />
@@ -29,35 +28,34 @@
             </definition>
             <commands>
                 <mainlist>
-                <setshapemode>actual | dp | bound</setshapemode>
-                <setmkbound mk="0"/>
-                <drawfilestl file="external_GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e.stl" objname="GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e" autofill="false">
-                    <drawscale x="0.001" y="0.001" z="0.001" />
-                </drawfilestl>
-                <setmkfluid mk="0"/>
-                <setdrawmode mode="full"/>
-                <drawcylinder radius="0.29" objname="Cylinder">
-                    <point x="0.0" y="-0.45" z="-0.78" />
-                    <point x="0.0" y="-0.45" z="0.41999999999999993" />
-                </drawcylinder>
-                <move x="0.0" y="-0.15" z="0.0" />
-                <rotate ang="90.0" x="1.0" y="-0.0" z="-0.0" />
-                <setmkfluid mk="0"/>
-                <setdrawmode mode="full"/>
-                <drawcylinder radius="0.08" objname="Cylinder001">
-                    <point x="0" y="0" z="0" />
-                    <point x="0" y="0" z="2.6" />
-                </drawcylinder>
-                <matrixreset />
-                <shapeout file="" />
+                    <setshapemode>actual | dp | bound</setshapemode>
+                    <setmkbound mk="0" />
+                    <drawfilestl file="external_GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e.stl" objname="GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e" autofill="false">
+                        <drawscale x="0.001" y="0.001" z="0.001" />
+                    </drawfilestl>
+                    <setmkfluid mk="0" />
+                    <setdrawmode mode="full" />
+                    <drawcylinder radius="0.29" objname="Cylinder">
+                        <point x="0.0" y="-0.45" z="-0.78" />
+                        <point x="0.0" y="-0.45" z="0.41999999999999993" />
+                    </drawcylinder>
+                    <move x="0.0" y="-0.15" z="0.0" />
+                    <rotate ang="90.0" x="1.0" y="-0.0" z="-0.0" />
+                    <setmkfluid mk="0" />
+                    <setdrawmode mode="full" />
+                    <drawcylinder radius="0.08" objname="Cylinder001">
+                        <point x="0" y="0" z="0" />
+                        <point x="0" y="0" z="2.6" />
+                    </drawcylinder>
+                    <matrixreset />
+                    <shapeout file="" />
                 </mainlist>
             </commands>
         </geometry>
     </casedef>
     <execution>
         <special>
-        <initialize>
-        </initialize>
+            <initialize />
         </special>
         <parameters>
             <parameter key="SavePosDouble" value="0" comment="Saves particle position using double precision (default=0)" />
@@ -66,7 +64,7 @@
             <parameter key="VerletSteps" value="40" comment="Verlet only: Number of steps to apply Euler timestepping (default=40)" />
             <parameter key="Kernel" value="2" comment="Interaction Kernel 1:Cubic Spline, 2:Wendland (default=2)" />
             <parameter key="ViscoTreatment" value="1" comment="Viscosity formulation 1:Artificial, 2:Laminar+SPS (default=1)" />
-            <parameter key="Visco" value="0.01" comment="Viscosity value" /> % Note alpha can depend on the resolution. A value of 0.01 is recommended for near irrotational flows.
+            <parameter key="Visco" value="0.01" comment="Viscosity value" />
             <parameter key="ViscoBoundFactor" value="1" comment="Multiply viscosity value with boundary (default=1)" />
             <parameter key="DensityDT" value="0" comment="Density Diffusion Term 0:None, 1:Molteni, 2:Fourtakas, 3:Fourtakas(full) (default=0)" />
             <parameter key="DensityDTvalue" value="0.1" comment="DDT value (default=0.1)" />
@@ -84,6 +82,42 @@
             <parameter key="PartsOutMax" value="1.0" comment="%/100 of fluid particles allowed to be excluded from domain (default=1)" units_comment="decimal" />
             <parameter key="RhopOutMin" value="700" comment="Minimum rhop valid (default=700)" units_comment="kg/m^3" />
             <parameter key="RhopOutMax" value="1300" comment="Maximum rhop valid (default=1300)" units_comment="kg/m^3" />
+            <simulationdomain comment="Defines domain of simulation (default=Uses minimun and maximum position of the generated particles)">
+                <posmin x="default" y="default" z="default" comment="e.g.: x=0.5, y=default-1, z=default-10%" />
+                <posmax x="default" y="default" z="default" />
+            </simulationdomain>
         </parameters>
+        <particles np="3329186" nb="278216" nbf="278216" mkboundfirst="10" mkfluidfirst="1">
+            <_summary>
+                <positions units_comment="metres (m)">
+                    <posmin x="-0.33" y="-0.785" z="-0.795" />
+                    <posmax x="0.33" y="2.74" z="0.885" />
+                </positions>
+                <fixed count="278216" id="0-278215" mkcount="1" mkvalues="10" />
+                <fluid count="3050970" id="278216-3329185" mkcount="1" mkvalues="1" />
+            </_summary>
+            <fixed mkbound="0" mk="10" begin="0" count="278216" />
+            <fluid mkfluid="0" mk="1" begin="278216" count="3050970" />
+        </particles>
+        <constants>
+            <data2d value="false" />
+            <gravity x="0" y="0" z="-9.81" units_comment="m/s^2" />
+            <cflnumber value="0.2" />
+            <gamma value="7" />
+            <rhop0 value="1000" units_comment="kg/m^3" />
+            <dp value="0.005" units_comment="metres (m)" />
+            <h value="0.010392304845" units_comment="metres (m)" />
+            <b value="672685.71429" units_comment="Pascal (Pa)" />
+            <massbound value="0.000125" units_comment="kg" />
+            <massfluid value="0.000125" units_comment="kg" />
+        </constants>
+        <uservars>
+            <varnum name="MResId" value="0" />
+        </uservars>
+        <motion />
+        <vtkout mkboundfirst="10" mkfluidfirst="1">
+            <vtkfile name="FinalNormal4cm__Dp.vtk" mk="10" mkbound="0" />
+            <vtkfile name="FinalNormal4cm__Actual.vtk" mk="10" mkbound="0" />
+        </vtkout>
     </execution>
 </case>

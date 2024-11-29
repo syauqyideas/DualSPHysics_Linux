@@ -1,6 +1,6 @@
-<!-- Case name: FinalNormal4cm -->
+<!-- Case name: FinalNormal5cm -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="29-11-2024 08:02:17">
+<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="29-11-2024 08:10:02">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -30,10 +30,6 @@
             <commands>
                 <mainlist>
                 <setshapemode>actual | dp | bound</setshapemode>
-                <setmkbound mk="0"/>
-                <drawfilestl file="external_GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e.stl" objname="GEO_63f0872e_f753_42a3_943f_f3a5d0cf9c0e" autofill="false">
-                    <drawscale x="0.001" y="0.001" z="0.001" />
-                </drawfilestl>
                 <setmkfluid mk="0"/>
                 <setdrawmode mode="full"/>
                 <drawcylinder radius="0.29" objname="Cylinder">
@@ -49,6 +45,10 @@
                     <point x="0" y="0" z="2.6" />
                 </drawcylinder>
                 <matrixreset />
+                <setmkbound mk="0"/>
+                <drawfilestl file="external_GEO_d1bebc36_b4f0_4ad6_8b05_18bc14808ff4.stl" objname="GEO_d1bebc36_b4f0_4ad6_8b05_18bc14808ff4" autofill="false">
+                    <drawscale x="0.001" y="0.001" z="0.001" />
+                </drawfilestl>
                 <shapeout file="" />
                 </mainlist>
             </commands>

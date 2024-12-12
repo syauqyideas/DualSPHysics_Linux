@@ -1,6 +1,6 @@
 <!-- Case name: ContractHorizontalNoHoneyComb -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="11-12-2024 11:43:45">
+<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="12-12-2024 14:38:03">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -49,14 +49,14 @@
                 <drawfilestl file="external_GEO_8212ee82_548b_41bf_9ec3_a3f47c248cc6.stl" objname="GEO_8212ee82_548b_41bf_9ec3_a3f47c248cc6" autofill="false">
                     <drawscale x="0.001" y="0.001" z="0.001" />
                 </drawfilestl>
-                <move x="-0.2" y="-0.1" z="0.08" />
+                <move x="-0.2" y="-0.1" z="0.075" />
                 <rotate ang="90.0" x="1.0" y="-0.0" z="-0.0" />
                 <setmkfluid mk="2"/>
                 <setdrawmode mode="full"/>
                 <drawbox objname="Cube">
                     <boxfill>solid</boxfill>
                     <point x="0" y="0" z="0" />
-                    <size x="0.4" y="0.17" z="0.7" />
+                    <size x="0.4" y="0.15" z="0.7" />
                 </drawbox>
                 <matrixreset />
                 <shapeout file="" />

@@ -85,5 +85,5 @@ if [ $errcode -eq 0 ]; then
 else
   echo Execution aborted
 fi
-read -n1 -r -p "Press any key to continue..." key
-echo
+echo execution exited
+exit 1

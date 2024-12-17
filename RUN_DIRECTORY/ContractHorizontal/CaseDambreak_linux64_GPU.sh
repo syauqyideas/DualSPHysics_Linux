@@ -5,7 +5,7 @@
 
 name=ContractHorizontal
 dirout=${name}_out
-
+dirfluid=$dirout/fluid
 
 # "executables" are renamed and called from their directory
 
@@ -53,10 +53,10 @@ if [ $errcode -eq 0 ]; then
   errcode=$?
 fi
 
-#if [ $errcode -eq 0 ]; then
-#  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirout/ResumeFluidOut
-#  errcode=$?
-#fi
+if [ $errcode -eq 0 ]; then
+  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirfluid
+  errcode=$?
+fi
 
 #if [ $errcode -eq 0 ]; then
 #  $measuretool -dirin $dirout -points CaseDambreak_PointsVelocity.txt -onlytype:-all,+fluid -vars:-all,+vel -savevtk $dirout/PointsVelocity -savecsv $dirout/PointsVelocity

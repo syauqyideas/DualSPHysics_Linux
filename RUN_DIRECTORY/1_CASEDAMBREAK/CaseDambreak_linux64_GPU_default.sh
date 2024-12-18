@@ -5,7 +5,7 @@
 
 name=CaseDambreak
 dirout=${name}_out
-dirfluid=$dirout/fluid
+
 
 # "executables" are renamed and called from their directory
 
@@ -54,29 +54,29 @@ if [ $errcode -eq 0 ]; then
 fi
 
 if [ $errcode -eq 0 ]; then
-  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirfluid
+  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirout/ResumeFluidOut
   errcode=$?
 fi
 
-#if [ $errcode -eq 0 ]; then
-#  $measuretool -dirin $dirout -points CaseDambreak_PointsVelocity.txt -onlytype:-all,+fluid -vars:-all,+vel -savevtk $dirout/PointsVelocity -savecsv $dirout/PointsVelocity
-#  errcode=$?
-#fi
+if [ $errcode -eq 0 ]; then
+  $measuretool -dirin $dirout -points CaseDambreak_PointsVelocity.txt -onlytype:-all,+fluid -vars:-all,+vel -savevtk $dirout/PointsVelocity -savecsv $dirout/PointsVelocity
+  errcode=$?
+fi
 
-#if [ $errcode -eq 0 ]; then
-# $measuretool -dirin $dirout -points CaseDambreak_PointsPressure_Incorrect.txt -onlytype:-all,+fluid -vars:-all,+press,+kcorr -kcusedummy:0 -kclimit:0.5 -savevtk $dirout/PointsPressure_Incorrect -savecsv $dirout/PointsPressure_Incorrect
-#  errcode=$?
-#fi
+if [ $errcode -eq 0 ]; then
+  $measuretool -dirin $dirout -points CaseDambreak_PointsPressure_Incorrect.txt -onlytype:-all,+fluid -vars:-all,+press,+kcorr -kcusedummy:0 -kclimit:0.5 -savevtk $dirout/PointsPressure_Incorrect -savecsv $dirout/PointsPressure_Incorrect
+  errcode=$?
+fi
 
-#if [ $errcode -eq 0 ]; then
-#  $measuretool -dirin $dirout -points CaseDambreak_PointsPressure_Correct.txt -onlytype:-all,+fluid -vars:-all,+press,+kcorr -kcusedummy:0 -kclimit:0.5 -savevtk $dirout/PointsPressure_Correct -savecsv $dirout/PointsPressure_Correct
-#  errcode=$?
-#fi
+if [ $errcode -eq 0 ]; then
+  $measuretool -dirin $dirout -points CaseDambreak_PointsPressure_Correct.txt -onlytype:-all,+fluid -vars:-all,+press,+kcorr -kcusedummy:0 -kclimit:0.5 -savevtk $dirout/PointsPressure_Correct -savecsv $dirout/PointsPressure_Correct
+  errcode=$?
+fi
 
-#if [ $errcode -eq 0 ]; then
-#  $computeforces -dirin $dirout -filexml $dirout/${name}.xml -onlymk:21 -savecsv $dirout/WallForce
-#  errcode=$?
-#fi
+if [ $errcode -eq 0 ]; then
+  $computeforces -dirin $dirout -filexml $dirout/${name}.xml -onlymk:21 -savecsv $dirout/WallForce
+  errcode=$?
+fi
 
 
 
@@ -85,5 +85,5 @@ if [ $errcode -eq 0 ]; then
 else
   echo Execution aborted
 fi
-echo execution exited
-exit 1
+read -n1 -r -p "Press any key to continue..." key
+echo

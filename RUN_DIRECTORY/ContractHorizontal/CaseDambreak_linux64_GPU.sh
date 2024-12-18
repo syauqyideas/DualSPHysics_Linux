@@ -33,6 +33,7 @@ if [ -e $dirout ]; then
   rm -f -r $dirout
 fi
 mkdir $dirout
+mkdir $dirfluid
 
 
 # CODES are executed according the selected parameters of execution in this testcase
@@ -53,10 +54,10 @@ if [ $errcode -eq 0 ]; then
   errcode=$?
 fi
 
-if [ $errcode -eq 0 ]; then
-  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirfluid
-  errcode=$?
-fi
+#if [ $errcode -eq 0 ]; then
+#  $partvtkout -dirin $dirout -filexml $dirout/${name}.xml -savevtk $dirout/PartFluidOut -SaveResume $dirfluid
+#  errcode=$?
+#fi
 
 #if [ $errcode -eq 0 ]; then
 #  $measuretool -dirin $dirout -points CaseDambreak_PointsVelocity.txt -onlytype:-all,+fluid -vars:-all,+vel -savevtk $dirout/PointsVelocity -savecsv $dirout/PointsVelocity

@@ -1,6 +1,6 @@
 <!-- Case name: FinalNormal5cm -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="29-11-2024 08:10:02">
+<case app="DesignSPHysics v0.7.1 (26-11-2024)" date="26-12-2024 22:12:05">
     <casedef>
         <constantsdef>
             <lattice bound="1" fluid="1" />
@@ -22,7 +22,7 @@
         <mkconfig boundcount="241" fluidcount="9">
         </mkconfig>
         <geometry>
-            <definition dp="0.005" comment="Initial inter-particle distance" units_comment="metres (m)">
+            <definition dp="0.008" comment="Initial inter-particle distance" units_comment="metres (m)">
                 <pointref x="0" y="0" z="0" />
                 <pointmin x="-0.5" y="-0.9" z="-0.8" />
                 <pointmax x="0.5" y="2.9" z="1.2" />
@@ -79,7 +79,7 @@
             <parameter key="#DtIni" value="0.0001" comment="Initial time step (default=h/speedsound)" units_comment="seconds" />
             <parameter key="#DtMin" value="1e-05" comment="Minimum time step (default=coefdtmin*h/speedsound)" units_comment="seconds" />
             <parameter key="DtAllParticles" value="0" comment="Velocity of particles used to calculate DT. 1:All, 0:Only fluid/floating (default=0)" />
-            <parameter key="TimeMax" value="8.0" comment="Time of simulation" units_comment="seconds" />
+            <parameter key="TimeMax" value="30.0" comment="Time of simulation" units_comment="seconds" />
             <parameter key="TimeOut" value="0.075" comment="Time out data" units_comment="seconds" />
             <parameter key="PartsOutMax" value="1.0" comment="%/100 of fluid particles allowed to be excluded from domain (default=1)" units_comment="decimal" />
             <parameter key="RhopOutMin" value="700" comment="Minimum rhop valid (default=700)" units_comment="kg/m^3" />
